@@ -1,0 +1,247 @@
+﻿// -*- C++ -*-
+/*!
+ * @file  SelectMusic.cpp
+ * @brief ModuleDescription
+ * @date $Date$
+ *
+ * @author AsahiNiikura<cy17248@shibaura-it.ac.jp>
+ *
+ * $Id$
+ */
+
+#include "SelectMusic.h"
+
+// Module specification
+// <rtc-template block="module_spec">
+static const char* selectmusic_spec[] =
+  {
+    "implementation_id", "SelectMusic",
+    "type_name",         "SelectMusic",
+    "description",       "ModuleDescription",
+    "version",           "1.0.0",
+    "vendor",            "AsahiNiikura",
+    "category",          "RockRock",
+    "activity_type",     "PERIODIC",
+    "kind",              "DataFlowComponent",
+    "max_instance",      "1",
+    "language",          "C++",
+    "lang_type",         "compile",
+    // Configuration variables
+    "conf.default.Instrument", "guitar",
+
+    // Widget
+    "conf.__widget__.Instrument", "radio",
+    // Constraints
+    "conf.__constraints__.Instrument", "(guitar,base,drum)",
+
+    "conf.__type__.Instrument", "float",
+
+    ""
+  };
+// </rtc-template>
+
+/*!
+ * @brief constructor
+ * @param manager Maneger Object
+ */
+SelectMusic::SelectMusic(RTC::Manager* manager)
+    // <rtc-template block="initializer">
+  : RTC::DataFlowComponentBase(manager),
+    m_XYZIn("XYZ", m_XYZ),
+    m_FilenameOut("Filename", m_Filename)
+
+    // </rtc-template>
+{
+}
+
+/*!
+ * @brief destructor
+ */
+SelectMusic::~SelectMusic()
+{
+}
+
+
+
+RTC::ReturnCode_t SelectMusic::onInitialize()
+{
+  // Registration: InPort/OutPort/Service
+  // <rtc-template block="registration">
+  // Set InPort buffers
+  addInPort("XYZ", m_XYZIn);
+  
+  // Set OutPort buffer
+  addOutPort("Filename", m_FilenameOut);
+  
+  // Set service provider to Ports
+  
+  // Set service consumers to Ports
+  
+  // Set CORBA Service Ports
+  
+  // </rtc-template>
+
+  // <rtc-template block="bind_config">
+  // Bind variables and configuration variable
+  bindParameter("Instrument", m_Inst, "guitar");
+  // </rtc-template>
+  
+  return RTC::RTC_OK;
+}
+
+/*
+RTC::ReturnCode_t SelectMusic::onFinalize()
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t SelectMusic::onStartup(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t SelectMusic::onShutdown(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+/*
+RTC::ReturnCode_t SelectMusic::onActivated(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t SelectMusic::onDeactivated(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*!
+ * 受け取ったデータに応じて流す音楽ファイルのファイル名を出力する
+ * コンフィグで楽器を選択する(guitar,base,dram)
+ */
+
+
+RTC::ReturnCode_t SelectMusic::onExecute(RTC::UniqueId ec_id)
+{
+	if (m_XYZIn.isNew()) {
+		m_XYZIn.read();
+
+		switch (m_XYZ.data) {
+			case 0:
+				if (m_Inst.data == "guitar") {
+					m_Filename.data = "guitar_c.wave";
+					m_FilenameOut.write();
+					break;
+				}
+				else if ((m_Inst.data == "base")) {
+					m_Filename.data = "base_c.wave";
+					m_FilenameOut.write();
+					break;
+				}
+				else {
+					m_Filename.data == "drum_bass.wave";
+						m_FilenameOut.write();
+					break;
+				}
+			case 1:
+				if (m_Inst.data == "guitar") {
+					m_Filename.data = "guitar_e.wave";
+					m_FilenameOut.write();
+					break;
+				}
+				else if ((m_Inst.data == "base")) {
+					m_Filename.data = "base_e.wave";
+					m_FilenameOut.write();
+					break;
+				}
+				else {
+					m_Filename.data == "drum_snare.wave";
+						m_FilenameOut.write();
+					break;
+				}
+			case 2:
+				if (m_Inst.data == "guitar") {
+					m_Filename.data = "guitar_g.wave";
+					m_FilenameOut.write();
+					break;
+				}
+				else if ((m_Inst.data == "base")) {
+					m_Filename.data = "base_g.wave";
+					m_FilenameOut.write();
+					break;
+				}
+				else {
+					m_Filename.data == "drum_cynbal.wave";
+						m_FilenameOut.write();
+					break;
+				}
+			default:
+				return RTC::RTC_ERROR;
+		}
+	}
+  return RTC::RTC_OK;
+}
+
+
+/*!
+ * エラーの時メッセージを出力する
+ */
+
+RTC::ReturnCode_t SelectMusic::onAborting(RTC::UniqueId ec_id)
+{
+	std::cout << "error";
+  return RTC::RTC_OK;
+}
+
+/*
+RTC::ReturnCode_t SelectMusic::onError(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t SelectMusic::onReset(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t SelectMusic::onStateUpdate(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+/*
+RTC::ReturnCode_t SelectMusic::onRateChanged(RTC::UniqueId ec_id)
+{
+  return RTC::RTC_OK;
+}
+*/
+
+
+
+extern "C"
+{
+ 
+  void SelectMusicInit(RTC::Manager* manager)
+  {
+    coil::Properties profile(selectmusic_spec);
+    manager->registerFactory(profile,
+                             RTC::Create<SelectMusic>,
+                             RTC::Delete<SelectMusic>);
+  }
+  
+};
+
+

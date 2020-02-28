@@ -1,0 +1,54 @@
+# JudgeAccele CMake config file
+#
+# This file sets the following variables:
+# JudgeAccele_FOUND - Always TRUE.
+# JudgeAccele_INCLUDE_DIRS - Directories containing the JudgeAccele include files.
+# JudgeAccele_IDL_DIRS - Directories containing the JudgeAccele IDL files.
+# JudgeAccele_LIBRARIES - Libraries needed to use JudgeAccele.
+# JudgeAccele_DEFINITIONS - Compiler flags for JudgeAccele.
+# JudgeAccele_VERSION - The version of JudgeAccele found.
+# JudgeAccele_VERSION_MAJOR - The major version of JudgeAccele found.
+# JudgeAccele_VERSION_MINOR - The minor version of JudgeAccele found.
+# JudgeAccele_VERSION_REVISION - The revision version of JudgeAccele found.
+# JudgeAccele_VERSION_CANDIDATE - The candidate version of JudgeAccele found.
+
+message(STATUS "Found JudgeAccele-@PROJECT_VERSION@")
+set(JudgeAccele_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(JudgeAccele_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(JudgeAccele_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(JudgeAccele_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(JudgeAccele_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(JudgeAccele_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(JudgeAccele_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(JudgeAccele_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(JudgeAccele_VERSION @PROJECT_VERSION@)
+set(JudgeAccele_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(JudgeAccele_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(JudgeAccele_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(JudgeAccele_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

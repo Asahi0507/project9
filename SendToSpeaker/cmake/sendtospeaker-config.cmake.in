@@ -1,0 +1,54 @@
+# SendToSpeaker CMake config file
+#
+# This file sets the following variables:
+# SendToSpeaker_FOUND - Always TRUE.
+# SendToSpeaker_INCLUDE_DIRS - Directories containing the SendToSpeaker include files.
+# SendToSpeaker_IDL_DIRS - Directories containing the SendToSpeaker IDL files.
+# SendToSpeaker_LIBRARIES - Libraries needed to use SendToSpeaker.
+# SendToSpeaker_DEFINITIONS - Compiler flags for SendToSpeaker.
+# SendToSpeaker_VERSION - The version of SendToSpeaker found.
+# SendToSpeaker_VERSION_MAJOR - The major version of SendToSpeaker found.
+# SendToSpeaker_VERSION_MINOR - The minor version of SendToSpeaker found.
+# SendToSpeaker_VERSION_REVISION - The revision version of SendToSpeaker found.
+# SendToSpeaker_VERSION_CANDIDATE - The candidate version of SendToSpeaker found.
+
+message(STATUS "Found SendToSpeaker-@PROJECT_VERSION@")
+set(SendToSpeaker_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(SendToSpeaker_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(SendToSpeaker_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(SendToSpeaker_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(SendToSpeaker_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(SendToSpeaker_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(SendToSpeaker_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(SendToSpeaker_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(SendToSpeaker_VERSION @PROJECT_VERSION@)
+set(SendToSpeaker_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(SendToSpeaker_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(SendToSpeaker_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(SendToSpeaker_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

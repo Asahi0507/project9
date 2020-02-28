@@ -1,0 +1,687 @@
+﻿DI_Config.xml
+DO_Config.xml
+PI_Config.xml
+AI_Config.xml
+TS_Config.xml
+GS_Config.xml
+BD_Config.xml
+AO_Config.xml
+IC_Config.xml
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <DI_Config>
+    <id>1</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>2</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>3</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>4</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>5</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>6</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>7</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>8</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>9</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>10</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>11</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>12</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>13</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>14</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>15</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>16</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>17</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>18</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>19</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>20</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>21</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>22</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>23</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>24</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>25</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>26</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>27</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>28</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>29</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>30</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>31</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+  <DI_Config>
+    <id>32</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <longpress>0</longpress>
+    <longpress_ms>1000</longpress_ms>
+    <group_no>0</group_no>
+  </DI_Config>
+</NewDataSet>
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <DO_Config>
+    <id>1</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>2</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>3</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>4</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>5</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>6</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>7</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>8</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>9</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>10</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>11</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>12</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>13</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>14</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>15</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+  <DO_Config>
+    <id>16</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </DO_Config>
+</NewDataSet>
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <PI_Config>
+    <id>1</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <signal_sign>0</signal_sign>
+    <pulse_weight>1</pulse_weight>
+    <sensitive>0</sensitive>
+    <maxCount>65535</maxCount>
+    <signCount>32767</signCount>
+  </PI_Config>
+  <PI_Config>
+    <id>2</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <signal_sign>0</signal_sign>
+    <pulse_weight>1</pulse_weight>
+    <sensitive>0</sensitive>
+    <maxCount>65535</maxCount>
+    <signCount>32767</signCount>
+  </PI_Config>
+  <PI_Config>
+    <id>3</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <signal_sign>0</signal_sign>
+    <pulse_weight>1</pulse_weight>
+    <sensitive>0</sensitive>
+    <maxCount>65535</maxCount>
+    <signCount>32767</signCount>
+  </PI_Config>
+  <PI_Config>
+    <id>4</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <signal_sign>0</signal_sign>
+    <pulse_weight>1</pulse_weight>
+    <sensitive>0</sensitive>
+    <maxCount>65535</maxCount>
+    <signCount>32767</signCount>
+  </PI_Config>
+  <PI_Config>
+    <id>5</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <signal_sign>0</signal_sign>
+    <pulse_weight>1</pulse_weight>
+    <sensitive>0</sensitive>
+    <maxCount>65535</maxCount>
+    <signCount>32767</signCount>
+  </PI_Config>
+</NewDataSet>
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <AI_Config>
+    <id>1</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <pct0>0</pct0>
+    <pct100>100</pct100>
+    <sensitive>0</sensitive>
+  </AI_Config>
+  <AI_Config>
+    <id>2</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <pct0>0</pct0>
+    <pct100>100</pct100>
+    <sensitive>0</sensitive>
+  </AI_Config>
+  <AI_Config>
+    <id>3</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <pct0>0</pct0>
+    <pct100>100</pct100>
+    <sensitive>0</sensitive>
+  </AI_Config>
+  <AI_Config>
+    <id>4</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <pct0>0</pct0>
+    <pct100>100</pct100>
+    <sensitive>0</sensitive>
+  </AI_Config>
+  <AI_Config>
+    <id>5</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <pct0>0</pct0>
+    <pct100>100</pct100>
+    <sensitive>0</sensitive>
+  </AI_Config>
+  <AI_Config>
+    <id>6</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <pct0>0</pct0>
+    <pct100>100</pct100>
+    <sensitive>0</sensitive>
+  </AI_Config>
+</NewDataSet>
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <TS_Config>
+    <id>1</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <cels_fahren>0</cels_fahren>
+  </TS_Config>
+</NewDataSet>
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <GS_Config>
+    <id>1</id>
+    <device_no>0</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+    <sensitive>1</sensitive>
+    <signal_signX>0</signal_signX>
+    <signal_signY>0</signal_signY>
+    <signal_signZ>1</signal_signZ>
+    <baseX>0</baseX>
+    <baseY>0</baseY>
+    <baseZ>0</baseZ>
+  </GS_Config>
+</NewDataSet>
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <BD_Config>
+    <id>1</id>
+    <device_no>1</device_no>
+    <device_name>AnalogBoard</device_name>
+    <function_no>0</function_no>
+    <function_name />
+  </BD_Config>
+</NewDataSet>
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <AO_Config>
+    <id>1</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </AO_Config>
+  <AO_Config>
+    <id>2</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </AO_Config>
+</NewDataSet>
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <IC_Config>
+    <id>1</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </IC_Config>
+  <IC_Config>
+    <id>2</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </IC_Config>
+  <IC_Config>
+    <id>3</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </IC_Config>
+  <IC_Config>
+    <id>4</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </IC_Config>
+  <IC_Config>
+    <id>5</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </IC_Config>
+  <IC_Config>
+    <id>6</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </IC_Config>
+  <IC_Config>
+    <id>7</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </IC_Config>
+  <IC_Config>
+    <id>8</id>
+    <device_no>-1</device_no>
+    <device_name />
+    <function_no>0</function_no>
+    <function_name />
+  </IC_Config>
+</NewDataSet>
